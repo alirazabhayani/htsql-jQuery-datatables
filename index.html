@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Htsql-jquery-datatables : HTSQL Integration with Jquery DataTables" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Htsql-jquery-datatables</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/alirazabhayani/htsql-jQuery-datatables">View on GitHub</a>
+
+          <h1 id="project_title">Htsql-jquery-datatables</h1>
+          <h2 id="project_tagline">HTSQL Integration with Jquery DataTables</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/alirazabhayani/htsql-jQuery-datatables/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/alirazabhayani/htsql-jQuery-datatables/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>HTSQL jQuery DataTables</p>
+
+<p>Integration of HTSQL with jQuery DataTable</p>
+
+<p>Idea/Inspiration taken from <a href="https://bitbucket.org/alimanfoo/htsql-datatables">https://bitbucket.org/alimanfoo/htsql-datatables</a></p>
+
+<p>Major differences in this project for which I had to change the whole project and logic are:</p>
+
+<pre><code>Support of complex HTSQL Queries( including filter, distinct, where, limit, etc )
+Dynamic DataTables Column Headers for which I don't have to change the HTML file each time I change the query and its outcomes.
+Runtime DataTable DATA and Property change is supported by using the DataTable "bDestroy" parameterand setting it to true.
+</code></pre>
+
+<p>Instructions to use this project:</p>
+
+<pre><code>Install HTSQL
+HTSQL Database from: &gt;&gt; wget -q http://dist.htsql.org/misc/htsql_demo.sqlite
+Clone this project locally: &gt;&gt; git clone https://github.com/alirazabhayani/htsql-jQuery-datatables
+python serve.py sqlite:htsql_demo.sqlite localhost 8000
+In you browser, go to the url, http://127.0.0.1:8000
+</code></pre>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Htsql-jquery-datatables maintained by <a href="https://github.com/alirazabhayani">alirazabhayani</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
