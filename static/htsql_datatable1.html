@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>  
+<head>
+    <title>HTSQL Data Integration With jQuery DataTables</title>
+    <style type="text/css">
+      @import "/DataTables-1.9.2/media/css/demo_page.css";
+      @import "/DataTables-1.9.2/media/css/demo_table.css";
+    </style>
+    <script type="text/javascript" src="/DataTables-1.9.2/media/js/jquery.js"></script>
+    <script type="text/javascript" src="/DataTables-1.9.2/media/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="customDataTable.js"></script>
+    <script type="text/javascript">
+    
+    var htsqlUrlBase = "/@";
+    var htsqlQuery = "/student{name,gender,dob}";
+    var columns = [];
+    
+    $(document).ready(function(){
+        getDataTable();
+    });
+    
+	
+    </script>
+</head>
+<body id="dt_example">
+    <div id="container">
+		<h1>HTSQL Data being fetched from the server</h1>
+		<p>This application fetches the data from server and dynamically populates the Column Headings as well as data in jQuery DataTable.
+        The pagination is handeled on the client side. This application supports complex HTSQL queries as well</p>
+        <table cellpadding="0" cellspacing="0" border="0" class="display" id="htsqlDataTable">
+            
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
